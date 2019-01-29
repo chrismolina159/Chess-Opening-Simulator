@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Opening {
 
 	protected ArrayList<ArrayList<String> > openings = new ArrayList<ArrayList<String>>();
-	protected ArrayList<String> queensGambAccept = new ArrayList<String>();
+	protected ArrayList<String> slavDefenseThreeKnightsVar = new ArrayList<String>();
 	protected ArrayList<String> ruyLopezMorClos = new ArrayList<String>();
 	protected ArrayList<String> scotchGameSchMieVar = new ArrayList<String>();
 	protected ArrayList<String> fkgScotchVarA = new ArrayList<String>();
@@ -12,9 +12,9 @@ public class Opening {
 		initiateRuyLopezMorClos();
 		initiateScotchGameSMV();
 		initateFkgScotchVarA();
-		initiateQueensGambitAccepted();
+		initiateSlavDefenseThreeKnightsVar();
 		openings.add(ruyLopezMorClos);
-		openings.add(queensGambAccept);
+		openings.add(slavDefenseThreeKnightsVar);
 		openings.add(scotchGameSchMieVar);
 		openings.add(fkgScotchVarA);
 	}
@@ -200,13 +200,26 @@ public class Opening {
 		fkgScotchVarA.add("Bb4");
 	}
 	
-	private void initiateQueensGambitAccepted() {
-		queensGambAccept.add("Queen's Gambit Accepted");
-		queensGambAccept.add("Pd4");
-		queensGambAccept.add("Pd5");
-		queensGambAccept.add("Pc4");
-		queensGambAccept.add("Pd5xc4");
-		//queensGambAccept.add("Nf3");
-		
+	private void initiateSlavDefenseThreeKnightsVar() {
+		slavDefenseThreeKnightsVar.add("Slav Defense: Three Knights Variation");
+		slavDefenseThreeKnightsVar.add("Pd4");
+		slavDefenseThreeKnightsVar.add("Pd5");
+		slavDefenseThreeKnightsVar.add("Pc4");
+		slavDefenseThreeKnightsVar.add("Pc6");
+		slavDefenseThreeKnightsVar.add("Nf3");
+		slavDefenseThreeKnightsVar.add("Nf6");
+		slavDefenseThreeKnightsVar.add("Nc3");
+		slavDefenseThreeKnightsVar.add("Pe6");
+		slavDefenseThreeKnightsVar.add("Pe3");
+		slavDefenseThreeKnightsVar.add("Nd7");  //Supposed to be Nbd7
+		slavDefenseThreeKnightsVar.add("Qc2");
+		slavDefenseThreeKnightsVar.add("Bd6");
+		slavDefenseThreeKnightsVar.add("Bd3");
+		slavDefenseThreeKnightsVar.add("O-O");
+		slavDefenseThreeKnightsVar.add("O-O");
+		slavDefenseThreeKnightsVar.add("Pd5xc4");
+		slavDefenseThreeKnightsVar.add("Nf6");
+		slavDefenseThreeKnightsVar.add("Bd3xc4");
+		slavDefenseThreeKnightsVar.add("Pb5");
 	}
 }
